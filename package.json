@@ -5,10 +5,10 @@
   "main": "main.js",
   "scripts": {
     "dev": "nodemon --exec electron . -e js,html",
-    "build:win": "electron-builder --win --config --publish never",
-    "build:mac-x86": "electron-builder --mac --config --publish never",
-    "build:mac-arm64": "electron-builder --arm64 --mac --config --publish never",
-    "build:linux": "electron-builder --linux --config --publish never"
+    "pack:win": "electron-builder --win --config --publish never",
+    "pack:mac-x86": "electron-builder --mac --config --publish never",
+    "pack:mac-arm64": "electron-builder --arm64 --mac --config --publish never",
+    "pack:linux": "electron-builder --linux --config --publish never"
   },
   "keywords": [
     "复制工具"
