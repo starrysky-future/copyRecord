@@ -5,35 +5,10 @@
   "main": "main.js",
   "scripts": {
     "dev": "nodemon --exec electron . -e js,html",
-    "build:win": "electron-builder --win --config --publish always",
-    "build:mac-x86": "electron-builder --mac --config --publish always",
-    "build:mac-arm64": "electron-builder --arm64 --mac --config --publish always",
-    "build:linux": "electron-builder --linux --config --publish always"
-  },
-  "build": {
-    "productName": "copyrecord",
-    "directories": {
-      "output": "build"
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true
-    },
-    "win": {
-      "icon": "./resources/copyRecord.ico",
-      "target": [
-        {
-          "target": "nsis"
-        }
-      ]
-    },
-    "mac": {
-      "icon": "./resources/copyRecord.ico"
-    },
-    "linux": {
-      "icon": "./resources/copyRecord.ico"
-    }
+    "build:win": "electron-builder --win --config --publish never",
+    "build:mac-x86": "electron-builder --mac --config --publish never",
+    "build:mac-arm64": "electron-builder --arm64 --mac --config --publish never",
+    "build:linux": "electron-builder --linux --config --publish never"
   },
   "keywords": [
     "复制工具"
