@@ -16,6 +16,7 @@
   "author": "Seven7",
   "license": "ISC",
   "devDependencies": {
+    "del-cli": "^5.0.0",
     "electron": "^24.2.0",
     "electron-builder": "^23.6.0"
   },
