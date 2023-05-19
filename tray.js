@@ -23,6 +23,7 @@ const createTray = function () {
         label: "退出",
         click: () => {
           store.set("clipboardData", clipboardData);
+          clipboardObserver.stop();
           app.quit();
         },
       },
