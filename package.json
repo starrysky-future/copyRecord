@@ -1,6 +1,6 @@
 {
   "name": "copyrecord",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "记录复制的工具，方便再次复制",
   "main": "main.js",
   "scripts": {
