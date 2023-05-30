@@ -25,16 +25,23 @@ class ClipboardObserver {
   }
   setClipboardData(newText) {
     const text = newText || clipboard.readText();
-    if (text && this.clipboardData.length <= this.size) {
+    if (!text) return;
+    if (this.clipboardData.length < this.size) {
+      this.clipboardData.unshift(text);
+    } else {
+      this.clipboardData.pop();
       this.clipboardData.unshift(text);
     }
   }
   setTimer() {
     this.timer = setInterval(() => {
       const text = clipboard.readText();
-      if (!this.clipboardData.includes(text)) {
-        this.setClipboardData(text);
+      console.log(text);
+      const index = this.clipboardData.indexOf(text);
+      if (index >= 0) {
+        this.clipboardData.splice(index, 1);
       }
+      this.setClipboardData(text);
     }, this.duration);
   }
 }
