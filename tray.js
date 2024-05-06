@@ -7,7 +7,7 @@ const path = require("path");
 const createTray = function () {
   const size = 20;
   const width = 20;
-  const tray = new Tray(path.resolve(__dirname, "./resources/copyRecord.png"));
+  const tray = new Tray(path.resolve(__dirname, "./resources/icon.png"));
   const clipboardData = store.get("clipboardData", []);
   const clipboardObserver = new ClipboardObserver({
     duration: 1000,
