@@ -1,4 +1,4 @@
-appId: com.electron.app
+appId: copyRecord
 productName: copyRecord
 directories:
   buildResources: build
